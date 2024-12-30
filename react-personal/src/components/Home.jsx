@@ -1,7 +1,14 @@
-export default function Home() {
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+
+const Home = () => {
   return (
-    <nav className="navbar">
-      
-    </nav>
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
   );
-}
+};
+
+export default Home;
