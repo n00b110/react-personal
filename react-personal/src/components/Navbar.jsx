@@ -6,7 +6,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold">Portfolio</h1>
           </div>
-          <div className="hidden md:flex space-x-4">
+          <div className="md:flex space-x-4">
             <a href="#about" className="text-gray-300 hover:text-white">
               About
             </a>
@@ -15,6 +15,9 @@ export default function Navbar() {
             </a>
             <a href="#contact" className="text-gray-300 hover:text-white">
               Contact
+            </a>
+            <a href="#contact" className="text-gray-300 hover:text-white">
+              Blog
             </a>
           </div>
           <div className="md:hidden">
