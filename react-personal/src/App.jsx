@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Projects from './components/About'
 import Home from './components/Home'
 
 export default function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/projects' element={<Projects />} />
     </Routes>
   )
 }
