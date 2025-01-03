@@ -9,7 +9,7 @@ const Projects = () => {
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800">Finance Web App</h3>
-                <img src="https://placehold.co/140x150" alt="" />
+                <img src="https://placehold.co/393x393" alt="" />
                 <p class="mt-2 text-gray-800">
                     Built using Python and Bootstrap.
                 </p>
