@@ -1,3 +1,7 @@
+import webScreenshot from "../assets/web-screenshot.png"
+import { Link } from "react-router-dom";
+
+
 const Projects = () => {
     return (
     <div class="bg-gradient-to-l from-cyan-700 to-slate-500 py-16 h-screen">
@@ -46,11 +50,12 @@ const Projects = () => {
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800">Finance Web App</h3>
+                <img src={webScreenshot} alt="" className="m-auto"/>
                 <p class="mt-2 text-gray-800">
                     Built using Python and Bootstrap.
                 </p>
                 <div class="mt-4 flex space-x-4">
-                    <a href="#" class="text-indigo-500 hover:underline">Live Demo</a>
+                    <Link to="https://n00b110.pythonanywhere.com/" class="text-indigo-500 hover:underline">Live Demo</Link>
                     <a href="#" class="text-indigo-500 hover:underline">GitHub</a>
                 </div>
                 </div>
