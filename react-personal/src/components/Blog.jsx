@@ -1,6 +1,6 @@
 const Blog = () => {
     return (
-        <h1>Coming Soon</h1>
+        <h1 className="text-4xl">Coming Soon</h1>
     )
 }
 
