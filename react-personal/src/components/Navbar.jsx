@@ -13,12 +13,10 @@ export default function Navbar() {
             <a href="#about" className="text-gray-300 hover:text-white">
               About
             </a>
-            <a href="#projects" className="text-gray-300 hover:text-white">
-              <Link to="/projects">
+            <Link to="/projects">
                 Projects
-              </Link>
-            </a>
-            <Link to="/" className="text-gray-300 hover:text-white">
+            </Link>
+            <Link to="/contact" className="text-gray-300 hover:text-white">
               Contact
             </Link>
             <Link to="/blog" className="text-gray-300 hover:text-white">
