@@ -1,4 +1,8 @@
-export default function About() {
+const About = () => {
 
 }
+
+
+export default About;
+
 

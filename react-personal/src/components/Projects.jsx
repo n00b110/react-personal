@@ -10,7 +10,7 @@ const Projects = () => {
             <p class="text-white text-center mt-2">Here are some of the projects I’ve worked on recently.</p>
 
             <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 group-hover:-translate-y-2">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 group-hover:-translate-y-2 animate-bounce">
                 <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800 pt-1 pb-1 ">Finance Web App</h3>
                 <img src={webScreenshot} alt="" className="rounded"/>
