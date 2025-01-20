@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <div className="text-white fixed w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,3 +31,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;
