@@ -1,6 +1,6 @@
 const Form = () => {
   return (
-    <div class="flex justify-center items-center min-h-screen from-cyan-700 to-slate-500">
+    <div class="bg-gradient-to-l from-cyan-700 to-slate-500 flex justify-center items-center min-h-screen ">
       <form class="w-full max-w-sm bg-white rounded-lg shadow-md p-6 space-y-4">
         <h2 class="text-lg font-medium text-gray-800">
           Subscribe to our Newsletter
