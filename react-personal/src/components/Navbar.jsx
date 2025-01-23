@@ -10,9 +10,9 @@ const Navbar = () => {
             <h1 className="text-2xl font-bold">Immanuel</h1>
           </div>
           <div className="md:flex space-x-4">
-            <a href="#about" className="text-gray-300 hover:text-white">
+            <Link to="/about" className="text-gray-300 hover:text-white">
               About
-            </a>
+            </Link>
             <Link to="/projects">
                 Projects
             </Link>
@@ -22,6 +22,7 @@ const Navbar = () => {
             <Link to="/blog" className="text-gray-300  hover:text-white">
               Blog
             </Link>
+            
           </div>
           <div className="md:hidden">
             <button className="text-gray-300 hover:text-white">Menu</button>
