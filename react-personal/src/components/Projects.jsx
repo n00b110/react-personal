@@ -38,6 +38,7 @@ const Projects = () => {
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800">Finance Web App</h3>
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Default</span>
                 <p class="mt-2 text-gray-800">
                     Built using Python and Bootstrap.
                 </p>
