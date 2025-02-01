@@ -13,7 +13,7 @@ const About = () => {
     return (
         <div className="bg-gradient-to-l from-cyan-700 to-slate-500 text-white h-screen w-screen flex flex-col">
             <h1 className="text-4xl font-bold relative top-4 left-10">About</h1>
-            <p className=""></p>
+            <p className="animate-fade-in">My name is Immanuel Olaoye</p>
         </div>
     )
 }
