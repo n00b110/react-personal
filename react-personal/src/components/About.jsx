@@ -84,7 +84,11 @@ const About = () => {
               <h3 className="text-2xl font-medium">Cboe Global Markets</h3>
               <h4 className="subtitle text-xl text-center font-light">
                 Site Reliability Engineer Intern - June 2023 - August 2023
-                <ul className="job-description"></ul>
+                <ul className="job-description">
+                  <li>Monitored and troubleshooted U.S. production and certification environments for technical issues</li>
+                  <li>Analyzed and optimized performance of the financial exchanges</li>
+                  <li>Won a presentation competition among all 64 interns related to improving the associate experience</li>
+                </ul>
               </h4>
             </div>
           </div>
