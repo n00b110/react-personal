@@ -14,8 +14,9 @@ const About = () => {
     <div className="bg-gradient-to-l from-cyan-700 to-slate-500 text-white h-screen">
       <div className="profile-card flex flex-col justify-center items-center text-center py-10">
         <h1 className="text-4xl font-bold ">About</h1>
+        <hr />
         <div className="image-holder rounded-full">
-            <img src="https://placehold.co/96 " alt="" className="w-24 h-24 p-3 m-5 animate-spin rounded-full bg-white" />
+            <img src="https://placehold.co/96" alt="" className="w-24 h-24 p-3 m-5 animate-spin rounded-full bg-white" />
         </div>
         <p>
           Grad @ University of Missouri-Kansas City |<br /> Looking for SWE or
@@ -66,6 +67,19 @@ const About = () => {
             <p className="mt-1">Django</p>
           </div>
         </div>
+      </div>
+      <div className="experience-section">
+        <h2 className="text-2xl text-center mt-10">Experience</h2>
+        <div className="flex card-content shadow-md px-6">
+          <div className="flex experience-card items-center gap-4">
+            <img src="https://placehold.co/48" alt="" />
+            <h3 className="text-2xl">Cboe Global Markets</h3>
+            <br />
+            <h4 className="subtitle text-xl text-center">Site Reliability Engineer Intern - June 2023 - August 2023</h4>
+          </div>
+
+        </div>
+
       </div>
     </div>
   );
