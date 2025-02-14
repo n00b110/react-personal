@@ -12,7 +12,7 @@ const Projects = () => {
             <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 group-hover:-translate-y-2">
                 <div class="p-6">
-                <h3 class="text-xl font-semibold text-gray-800 pt-1 pb-1 ">Finance Web App</h3>
+                <h3 class="text-xl font-semibold text-gray-800 pt-1 pb-1">Finance Web App</h3>
                 <img src={webScreenshot} alt="" className="rounded"/>
                 <p class="mt-2 text-gray-800">
                     Built using Python and Bootstrap.

@@ -15,7 +15,7 @@ const About = () => {
       <div className="profile-card flex flex-col justify-center items-center text-center py-10">
         <h1 className="text-4xl font-bold ">About</h1>
         <div className="image-holder rounded-full">
-            <img src="https://placehold.co/96 " alt="" className="w-24 h-24 m-5 animate-spin" />
+            <img src="https://placehold.co/96 " alt="" className="w-24 h-24 p-3 m-5 animate-spin rounded-full bg-white" />
         </div>
         <p>
           Grad @ University of Missouri-Kansas City |<br /> Looking for SWE or
@@ -23,7 +23,7 @@ const About = () => {
           and their solutions
         </p>
       </div>
-      <div className="tech-stack">
+      <div className="tech-stack m-auto">
         <h2 className="text-2xl text-center">Tech Stack</h2>
         <div className="flex mx-auto">
           <div className="flex items-center flex-col rounded-lg shadow p-5 justify-center">
