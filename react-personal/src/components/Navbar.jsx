@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold">Immanuel</h1>
+            <h1 className="text-2xl font-bold animate-fade-in">Immanuel</h1>
           </div>
           <div className="md:flex space-x-4">
             <Link to="/about" className="text-gray-300 hover:text-white">

@@ -10,7 +10,7 @@
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-l from-cyan-700 to-slate-500 text-white h-screen">
+    <div className="bg-gradient-to-l from-cyan-700 to-slate-500 text-white min-h-screen">
       <div className="profile-card flex flex-col justify-center items-center text-center py-10">
         <h1 className="text-4xl font-bold ">About</h1>
         <hr />
@@ -59,19 +59,19 @@ const About = () => {
             />
             <p className="mt-1">Tailwind</p>
           </div>
-          <div className="flex items-center flex-col rounded-lg shadow-lg p-5">
+          <div className="flex items-center flex-col rounded-lg shadow-lg p-5 bg-white">
             <img
               className="w-20 h-20 px-5"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"
             />
-            <p className="mt-1">Blender</p>
+            <p className="mt-1 text-black">Blender</p>
           </div>
-          <div className="flex items-center flex-col rounded-lg shadow-lg p-5">
+          <div className="flex items-center flex-col rounded-lg shadow-lg p-5 bg-white">
             <img
               className="w-20 h-20 px-5"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
             />
-            <p className="mt-1">Django</p>
+            <p className="mt-1 text-indigo-500">Django</p>
           </div>
         </div>
       </div>
@@ -82,12 +82,28 @@ const About = () => {
             <img src="https://www.cboe.com/favicon.ico" alt="" />
             <div className="flex flex-col text-elements ">
               <h3 className="text-2xl font-medium">Cboe Global Markets</h3>
-              <h4 className="subtitle text-xl text-center font-light">
+              <h4 className="subtitle text-xl font-light">
                 Site Reliability Engineer Intern - June 2023 - August 2023
                 <ul className="job-description">
-                  <li>Monitored and troubleshooted U.S. production and certification environments for technical issues</li>
-                  <li>Analyzed and optimized performance of the financial exchanges</li>
-                  <li>Won a presentation competition among all 64 interns related to improving the associate experience</li>
+                  <li className="list-disc text-xl">Monitored and troubleshooted U.S. production and certification environments for technical issues</li>
+                  <li className="list-disc text-xl">Analyzed and optimized performance of the financial exchanges</li>
+                  <li className="list-disc text-xl">Won a presentation competition among all 64 interns related to improving the associate experience</li>
+                </ul>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div className="flex card-content shadow-md px-6 mt-5">
+          <div className="flex experience-card items-center gap-4">
+            <img src="https://www.cboe.com/favicon.ico" alt="" />
+            <div className="flex flex-col text-elements ">
+              <h3 className="text-2xl font-medium">Cboe Global Markets</h3>
+              <h4 className="subtitle text-xl font-light">
+                Site Reliability Engineer Intern - June 2023 - August 2023
+                <ul className="job-description">
+                  <li className="list-disc text-xl">Monitored and troubleshooted U.S. production and certification environments for technical issues</li>
+                  <li className="list-disc text-xl">Analyzed and optimized performance of the financial exchanges</li>
+                  <li className="list-disc text-xl">Won a presentation competition among all 64 interns related to improving the associate experience</li>
                 </ul>
               </h4>
             </div>
