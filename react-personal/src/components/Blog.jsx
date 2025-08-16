@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { getAllPosts, getAllTags, getPostsByTag } from "../utils/blogUtils";
+import BlogCard from "./BlogCard";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
@@ -59,6 +61,22 @@ const Newsletter = () => {
 };
 
 const Blog = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedTag, setSelectedTag] = useState("All");
+
+  // Load all posts and tags
+  const allPosts = getAllPosts();
+  const allTags = ["All", ...getAllTags()];
+
+  // Filter posts based on search and tag selection
+  const filteredPosts = allPosts.filter((post) => {
+    const matchesSearch =
+      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesTag = selectedTag === "All" || post.tags.includes(selectedTag);
+    return matchesSearch && matchesTag;
+  });
+
   return (
     <div className="bg-gradient-to-l from-cyan-700 to-slate-500 text-white min-h-screen">
       <Link
@@ -71,13 +89,58 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-5xl font-bold text-center mb-12">Blog</h1>
 
-        {/* Coming Soon Message */}
-        <div className="text-center">
-          <h2 className="text-4xl animate-bounce mb-8">Coming Soon</h2>
-          <p className="text-xl mb-8">
-            I'm working on some exciting content. Stay tuned!
-          </p>
+        {/* Search and Filter Section */}
+        <div className="mb-12">
+          <div className="flex flex-col md:flex-row gap-4 mb-6">
+            <div className="flex-1">
+              <input
+                type="text"
+                placeholder="Search articles..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 focus:outline-none focus:border-white/50 text-white placeholder-white/70"
+              />
+            </div>
+            <div className="flex gap-2 flex-wrap">
+              {allTags.map((tag) => (
+                <button
+                  key={tag}
+                  onClick={() => setSelectedTag(tag)}
+                  className={`px-4 py-2 rounded-lg transition-colors ${
+                    selectedTag === tag
+                      ? "bg-cyan-500 text-white"
+                      : "bg-white/20 text-white hover:bg-white/30"
+                  }`}
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-white/70">
+              {filteredPosts.length} article
+              {filteredPosts.length !== 1 ? "s" : ""} found
+            </p>
+          </div>
         </div>
+
+        {/* Articles Grid */}
+        {filteredPosts.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {filteredPosts.map((post) => (
+              <BlogCard key={post.slug} post={post} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <h3 className="text-2xl font-bold mb-4">No articles found</h3>
+            <p className="text-white/70">
+              Try adjusting your search terms or tag filter.
+            </p>
+          </div>
+        )}
 
         {/* Newsletter Component */}
         <Newsletter />
