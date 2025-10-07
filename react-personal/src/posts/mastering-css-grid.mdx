@@ -1,0 +1,81 @@
+---
+title: "Mastering CSS Grid Layout"
+date: "2024-12-12"
+author: "Immanuel Olaoye"
+excerpt: "A comprehensive guide to CSS Grid for modern web layouts"
+tags: ["css", "layout", "grid"]
+readTime: "8 min read"
+---
+
+# Mastering CSS Grid Layout
+
+CSS Grid is a powerful layout system that allows you to create complex web layouts with ease. Let's dive deep into this modern CSS feature.
+
+## What is CSS Grid?
+
+CSS Grid Layout is a two-dimensional layout system designed for the web. It lets you lay out items in rows and columns, and has many features that make building complex layouts straightforward.
+
+## Basic Grid Setup
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  gap: 20px;
+}
+```
+
+## Grid Areas
+
+One of the most powerful features is grid areas:
+
+```css
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+```
+
+## Responsive Grid
+
+CSS Grid makes responsive design much easier:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+```
+
+## Best Practices
+
+1. **Use semantic HTML** with grid
+2. **Plan your layout** before coding
+3. **Test on different screen sizes**
+4. **Use grid areas** for complex layouts
+
+## Browser Support
+
+CSS Grid is supported in all modern browsers, making it a reliable choice for production websites.
+
+## Conclusion
+
+CSS Grid revolutionizes how we think about web layouts. Once you master it, you'll wonder how you ever built layouts without it!

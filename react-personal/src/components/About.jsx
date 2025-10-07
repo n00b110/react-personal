@@ -133,7 +133,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/n00b110"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform duration-300"
@@ -145,7 +145,7 @@ const About = () => {
               />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/immanuelolaoye"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform duration-300"
