@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { getAllPosts, getAllTags, getPostsByTag } from "../utils/blogUtils";
 import BlogCard from "./BlogCard";
 
 const Newsletter = () => {
