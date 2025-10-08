@@ -71,12 +71,12 @@ const Projects = () => {
       technologies: ["Python", "Bootstrap", "Flask", "SQLite"],
     },
     {
-      title: "Project 2",
-      description: "Description of your second project goes here.",
+      title: "ZapScheduler",
+      description: "Developed a full-stack social media scheduling platform that automates post timing across multiple platforms",
       image: webScreenshot,
       demoLink: "#",
       githubLink: "#",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["Svelte", "Supabase", "Tailwind CSS"],
     },
     {
       title: "Project 3",
